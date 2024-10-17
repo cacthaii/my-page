@@ -1,6 +1,8 @@
 var http = require("http");
 const port = 8000;
 
+// Made a comment on the index.js file too
+
 const htmlContent = ` 
 <!DOCTYPE html>
 <html lang="en">
