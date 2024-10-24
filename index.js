@@ -23,8 +23,15 @@ const htmlContent = `
 
 http.createServer(function(req, res) {
     // console.log(req);
+
+    if (req.url=="about"){
+        res.writeHead(200, { "Content-Type": "text/plain" });
+        res.end("About!");
+    }
+    else {
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end(htmlContent);
+    }
     }).listen(port, function() {
         console.log('Node server is running on port ${port}...');
     });
