@@ -24,7 +24,7 @@ const htmlContent = `
 http.createServer(function(req, res) {
     // console.log(req);
 
-    if (req.url=="about"){
+    if (req.url=="/about"){
         res.writeHead(200, { "Content-Type": "text/plain" });
         res.end("About!");
     }
