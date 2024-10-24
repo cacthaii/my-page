@@ -22,7 +22,7 @@ const htmlContent = `
 `;
 
 http.createServer(function(req, res) {
-    console.log(req);
+    // console.log(req);
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end(htmlContent);
     }).listen(port, function() {
